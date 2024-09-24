@@ -22,10 +22,20 @@ function setup() {
 
   strokeWeight(2);
 
-  // draw a column of rows
+  // draw a row of stars
+  for (let x = 50; x < width; x += 80) {
+    star(x, 50, 80, 8);
+  }
+
+  // draw a column of stars
   for (let y = 50; y < height; y += 100) {
+    star(50, y, 100, 10);
+  }
+
+  // draw a column of rows
+  for (let y = 200; y < height; y += 100) {
     // draw a row of stars
-    for (let x = 50; x < width; x += 100) {
+    for (let x = 200; x < width; x += 100) {
       star(x, y, 100, 15);
     }
   }
